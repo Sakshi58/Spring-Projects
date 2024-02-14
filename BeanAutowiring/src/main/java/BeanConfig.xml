@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- creating a bean using XML file of the state class and providing the values through <property> tag -->
+	 
+	<bean id="state" class="com.example.BeanAutowiring.State"> 
+			<property name="name" value="UP" /> 
+	</bean> 
+	
+	<!-- Creating a bean for the country class and autowire it byName method-->
+	<bean id="country" class="com.example.BeanAutowiring.Country" autowire="byName"></bean>
+	 
+</beans>
