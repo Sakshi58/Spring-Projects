@@ -8,9 +8,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /* A java maven project to show working of @Autowired Annotation 
  * 
- * Create  a Java Maven project and create a java class named as State with a variable named stateName and then 
- * create another class named as Country with variables such as ID, city name and State class secondary object and 
- * then autowire the state value into the Country class through @Autowired annotation and using Setter Dependency .
+ * Create  a Java Maven project and create a java class named State with a variable named stateName and then 
+ * Create another class named Country with variables such as ID, city name and State class secondary object and 
+ * autowire the state value into the Country class through @Autowired annotation and Setter Dependency .
  * Injection.
  * */
 @SpringBootApplication
@@ -35,9 +35,11 @@ public class BeanAutowiringApplication {
         country.setId(01); 
         country.setName("Varanasi"); 
         State st = context.getBean("state", State.class); 
-//        st.setName("njhvt"); 
+
         country.setstate(st); 
-        country.display(); 
+        country.display();
+
+	context.close();
 	}
 
 }
