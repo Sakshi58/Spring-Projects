@@ -41,7 +41,7 @@ public class ComponentDemoApplication {
 		context.scan("com.example.services");
 	    
 		/*
-		 * creating the objetct of the MyServices class and accessing its method
+		 * creating the object of the MyServices class and accessing its method
 		 */	
 		
 	    MyServices myservice = context.getBean(MyServices.class);
@@ -49,6 +49,8 @@ public class ComponentDemoApplication {
 	    int factoriall = myservice.factorial(5);
 	    
 	    System.out.println("Factorial of 5 = "+factoriall);
+
+		context.close();
 	}
 
 }
