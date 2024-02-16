@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- Here we created a bean that will inject the properties into the Student class using setter 
+and getter functions 
+class represents the main class in which we have to inject the properties and name is the 
+name of the bean to uniquely identify it. -->
+	<bean class="com.springcore.SpringCore.Student" name="student1"> 
+	
+	<!-- Here property means the variable of the class whose value has to be injected 
+	 - using property means you are using setter injection to set the values 
+	 - value to give the value 
+	 - property name should be same to the variables of the class -->
+		<property name="id">
+			<value>2008</value>
+		</property>
+		<property name="name">
+			<value>Sakshi</value>
+		</property>
+		<property name="address">
+			<value>Pune</value>
+		</property>
+	</bean>
+</beans>
