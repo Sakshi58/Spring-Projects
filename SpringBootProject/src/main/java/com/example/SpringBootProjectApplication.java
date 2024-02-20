@@ -32,7 +32,8 @@ public class SpringBootProjectApplication implements CommandLineRunner {
 	}
 	
 
-	
+	// CommandLineRunner contains run() method which is overridden
+
 	  @Override
 	    public void run(String... args) throws Exception {
 		  
