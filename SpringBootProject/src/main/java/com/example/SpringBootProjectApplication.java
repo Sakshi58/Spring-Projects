@@ -19,6 +19,9 @@ import java.util.List;
  * */
 
 @SpringBootApplication
+	/*CommandLineRunner is a software or tool, provided by the Spring framework for 
+ 	* quickly developing and testing the application from the command prompt
+	*/
 public class SpringBootProjectApplication implements CommandLineRunner {
 
 	@Autowired
