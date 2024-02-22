@@ -1,0 +1,4 @@
+com\example\demo\dao\StudentDaoImpl.class
+com\example\demo\CruDdemoApplication.class
+com\example\demo\dao\StudentDAO.class
+com\example\demo\entity\Student.class
